@@ -1,3 +1,4 @@
+#include <BodyBox.hpp>
 
 BodyBox::BodyBox(int iw, int ih)
 {
