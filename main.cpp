@@ -6,6 +6,7 @@
 #include <vector>
 #include <math.h>  
 #include <stdio.h>
+#include <thread>
 
 //sfml imports
 #include <SFML/Graphics.hpp>
@@ -13,9 +14,13 @@
 #include <SFML/Window.hpp>
 
 //header Files
-#include "AlexClasses.h"
-#include "AlexGlobals.h"
-#include <thread>
+#include "Animal.hpp"
+#include "BodyBox.hpp"
+#include "Inventory.hpp"
+#include "ItemStack.hpp"
+#include "Notification.hpp"
+#include "NotificationHandler.hpp"
+#include "WeaponBox.hpp"
 
 //namespaces
 using namespace sf;
@@ -50,7 +55,6 @@ weaponType playerWeapon = weaponType::sword;
 int weaponFrame = 100;
 Clock weaponClock;
 WeaponBox weapon[3];
-
 
 void drawFrame(RenderWindow *window, int x, int y, int w, int h)
 {
@@ -192,7 +196,6 @@ public:
 	}
 };
 Hotbar hotBar;
-
 
 class DamageNumber
 {

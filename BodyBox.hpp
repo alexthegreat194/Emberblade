@@ -1,3 +1,12 @@
+#pragma once
+
+//sfml imports
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+
+//other imports
+#include <WeaponBox.hpp>
+
 class BodyBox
 {
 private:
