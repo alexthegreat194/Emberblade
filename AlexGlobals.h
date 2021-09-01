@@ -31,84 +31,84 @@ using namespace std;
 #define WORLD_HIEGHT 20000
 
 //global variable:
-extern bool debug;
-extern double worldX;
-extern double worldY;
-extern double worldZoom;
+bool debug;
+double worldX;
+double worldY;
+double worldZoom;
 
-extern double localX;
-extern double localY;
+double localX;
+double localY;
 
-extern int mouseX;
-extern int mouseY;
+int mouseX;
+int mouseY;
 
-extern float mouseDX;
-extern float mouseDY;
-extern float mouseRatio;
+float mouseDX;
+float mouseDY;
+float mouseRatio;
 
 //texture and sprite variables
-extern Texture sheepTexture;
-extern Texture grassTexture;
-extern Sprite grassSprite;
+Texture sheepTexture;
+Texture grassTexture;
+Sprite grassSprite;
 
-extern Texture styleSheet;
-extern Sprite mushroom[3];
+Texture styleSheet;
+Sprite mushroom[3];
 
-extern Texture leatherSheet;
-extern Sprite leatherIcon;
+Texture leatherSheet;
+Sprite leatherIcon;
 
-extern Texture meatSheet;
-extern Sprite meatIcon;
+Texture meatSheet;
+Sprite meatIcon;
 
-extern Texture spearSheet;
-extern Sprite spearSprite;
-extern Sprite spearSpriteStatic;
+Texture spearSheet;
+Sprite spearSprite;
+Sprite spearSpriteStatic;
 
-extern Texture swordSheet;
-extern Sprite swordSprite;
-extern Sprite swordSpriteStatic;
+Texture swordSheet;
+Sprite swordSprite;
+Sprite swordSpriteStatic;
 
-extern Texture potionhSheet;
-extern Sprite potionhSprite;
-extern Texture potionaSheet;
-extern Sprite potionaSprite;
+Texture potionhSheet;
+Sprite potionhSprite;
+Texture potionaSheet;
+Sprite potionaSprite;
 
-extern Texture pigTexture;
-extern Sprite pigUp[3];
-extern Sprite pigRight[3];
-extern Sprite pigDown[3];
-extern Sprite pigLeft[3];
+Texture pigTexture;
+Sprite pigUp[3];
+Sprite pigRight[3];
+Sprite pigDown[3];
+Sprite pigLeft[3];
 
-extern Texture boarTexture;
-extern Sprite boarUp[3];
-extern Sprite boarRight[3];
-extern Sprite boarDown[3];
-extern Sprite boarLeft[3];
+Texture boarTexture;
+Sprite boarUp[3];
+Sprite boarRight[3];
+Sprite boarDown[3];
+Sprite boarLeft[3];
 
-extern Texture uiTexture;
-extern Sprite slotSprite[3][3];
-extern Sprite mouseSprite;
-extern Sprite buttonNClicked;
-extern Sprite buttonClicked;
-extern Sprite craftingIcon;
-extern Sprite frameTop[3];
-extern Sprite frameMiddle[3];
-extern Sprite frameBottom[3];
+Texture uiTexture;
+Sprite slotSprite[3][3];
+Sprite mouseSprite;
+Sprite buttonNClicked;
+Sprite buttonClicked;
+Sprite craftingIcon;
+Sprite frameTop[3];
+Sprite frameMiddle[3];
+Sprite frameBottom[3];
 
-extern Texture playerTexture;
-extern Sprite pUp[9];
-extern Sprite pLeft[9];
-extern Sprite pDown[9];
-extern Sprite pRight[9];
-extern Sprite playerSprite;
-extern int walkingFrames;
-extern Clock walkingClock;
-extern bool playerIsWalking;
+Texture playerTexture;
+Sprite pUp[9];
+Sprite pLeft[9];
+Sprite pDown[9];
+Sprite pRight[9];
+Sprite playerSprite;
+int walkingFrames;
+Clock walkingClock;
+bool playerIsWalking;
 
-extern Font font;
-extern Text fpsText;
-extern Text interactText;
+Font font;
+Text fpsText;
+Text interactText;
 
-extern Inventory playerInv;
-extern NotificationHandler notifHandler;
-extern gameMode mode;
+Inventory playerInv;
+NotificationHandler notifHandler;
+gameMode mode;
