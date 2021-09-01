@@ -1,3 +1,5 @@
+#include "Item.hpp"
+
 Item::Item()
 {
 	blockType = ItemType::empty;

@@ -1,3 +1,13 @@
+#pragma once
+
+//sfml imports
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+
+//other import
+#include "Item.hpp"
+#include "ItemStack.hpp"
+
 class Inventory
 {
 private:

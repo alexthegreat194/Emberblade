@@ -31,7 +31,3 @@ enum gameMode
 void drawFrame(RenderWindow* window, int x, int y, int w, int h);
 
 //inventory
-enum ItemType
-{
-	empty, plant, meat, leather, healthPotion
-};

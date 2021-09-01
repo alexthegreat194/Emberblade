@@ -1,4 +1,4 @@
-
+#include "Inventory.hpp"
 
 #define MAXSTACKS 25
 
