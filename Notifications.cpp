@@ -12,7 +12,6 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Network.hpp>
-#include <Windows.h>
 
 //header Files
 #include "AlexClasses.h"

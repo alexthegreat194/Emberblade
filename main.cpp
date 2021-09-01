@@ -30,99 +30,12 @@ using namespace std;
 #define WORLD_WIDTH 20000
 #define WORLD_HIEGHT 20000
 
-#define PI 3.14159265359
-
 #define MYWINDOW_HEIGHT 720
 #define MYWINDOW_WIDTH 1280
 
 #define MAX_SPEED .15
 #define WORLD_WIDTH 20000
 #define WORLD_HIEGHT 20000
-
-//global variable:
-bool debug = false;
-double worldX = 0;
-double worldY = 0;
-double worldZoom = 0;
-
-double localX = 100;
-double localY = 100;
-
-int mouseX = 0;
-int mouseY = 0;
-
-float mouseDX = 0;
-float mouseDY = 0;
-float mouseRatio = 0;
-
-//texture and sprite variables
-Texture sheepTexture;
-Texture grassTexture;
-Texture grassBackTexture;
-Texture grassFrontTexture;
-Sprite grassSprite;
-Sprite grassBackSprite;
-Sprite grassFrontSprite;
-
-Texture styleSheet;
-Sprite mushroom[3];
-
-Texture leatherSheet;
-Sprite leatherIcon;
-
-Texture meatSheet;
-Sprite meatIcon;
-
-Texture spearSheet;
-Sprite spearSprite;
-Sprite spearSpriteStatic;
-
-Texture swordSheet;
-Sprite swordSprite;
-Sprite swordSpriteStatic;
-
-Texture potionhSheet;
-Sprite potionhSprite;
-Texture potionaSheet;
-Sprite potionaSprite;
-
-Texture pigTexture;
-Sprite pigUp[3];
-Sprite pigRight[3];
-Sprite pigDown[3];
-Sprite pigLeft[3];
-
-Texture boarTexture;
-Sprite boarUp[3];
-Sprite boarRight[3];
-Sprite boarDown[3];
-Sprite boarLeft[3];
-
-Texture uiTexture;
-Sprite slotSprite[3][3];
-Sprite mouseSprite;
-Sprite buttonNClicked;
-Sprite buttonClicked;
-Sprite craftingIcon;
-Sprite frameTop[3];
-Sprite frameMiddle[3];
-Sprite frameBottom[3];
-Sprite healthBarEmpty[3];
-Sprite healthBarGreen[3];
-
-Texture playerTexture;
-Sprite pUp[9];
-Sprite pLeft[9];
-Sprite pDown[9];
-Sprite pRight[9];
-Sprite playerSprite;
-int walkingFrames = 0;
-Clock walkingClock;
-bool playerIsWalking = false;
-
-Font font;
-Text fpsText;
-Text interactText;
 
 //weopon variables
 enum weaponType
