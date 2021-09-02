@@ -1,5 +1,7 @@
 #include "WeaponBox.hpp"
+#include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 using namespace sf;
 
 WeaponBox::WeaponBox(int inpx, int inpy, int inpr)

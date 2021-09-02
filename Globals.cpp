@@ -31,6 +31,12 @@ Texture sheepTexture;
 Texture grassTexture;
 Sprite grassSprite;
 
+Texture grassBackTexture;
+Sprite grassBackSprite;
+
+Texture grassFrontTexture;
+Sprite grassFrontSprite;
+
 Texture styleSheet;
 Sprite mushroom[3];
 
@@ -74,6 +80,9 @@ Sprite craftingIcon;
 Sprite frameTop[3];
 Sprite frameMiddle[3];
 Sprite frameBottom[3];
+
+Sprite healthBarEmpty[3];
+Sprite healthBarGreen[3];
 
 Texture playerTexture;
 Sprite pUp[9];

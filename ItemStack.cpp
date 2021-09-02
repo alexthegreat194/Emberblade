@@ -1,15 +1,17 @@
 #include "ItemStack.hpp"
+#include <stdio.h>
 
 //stack sizes
 #define DEFAULT 10
 #define POTION 5
+
 ItemStack::ItemStack() {
     stackType = ItemType::empty;
 }
 
 void ItemStack::printData()
 {
-    std::printf("StackType: %i, Count: %i\n", stackType, itemCount);
+    printf("StackType: %i, Count: %i\n", stackType, itemCount);
 }
 bool ItemStack::canAdd(Item inp)
 {
@@ -70,7 +72,7 @@ void ItemStack::add(Item inp)
     }
     else
     {
-        std::printf("no\n");
+        printf("no\n");
     }
 }
 bool ItemStack::canRemove(Item inp)

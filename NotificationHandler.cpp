@@ -1,4 +1,5 @@
 #include "NotificationHandler.hpp"
+#include "Globals.hpp"
 
 void NotificationHandler::addNotification(Notification inpNotif)
 {

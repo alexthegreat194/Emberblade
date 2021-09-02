@@ -2,6 +2,7 @@
 #include "Notification.hpp"
 #include "Item.hpp"
 #include "Emberblade.hpp"
+#include "Globals.hpp"
 #include <SFML/Graphics.hpp>
 using namespace sf;
 

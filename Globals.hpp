@@ -45,6 +45,12 @@ extern Texture sheepTexture;
 extern Texture grassTexture;
 extern Sprite grassSprite;
 
+extern Texture grassBackTexture;
+extern Sprite grassBackSprite;
+
+extern Texture grassFrontTexture;
+extern Sprite grassFrontSprite;
+
 extern Texture styleSheet;
 extern Sprite mushroom[3];
 
@@ -88,6 +94,9 @@ extern Sprite craftingIcon;
 extern Sprite frameTop[3];
 extern Sprite frameMiddle[3];
 extern Sprite frameBottom[3];
+
+extern Sprite healthBarEmpty[3];
+extern Sprite healthBarGreen[3];
 
 extern Texture playerTexture;
 extern Sprite pUp[9];
