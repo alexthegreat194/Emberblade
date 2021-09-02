@@ -33,9 +33,9 @@ public:
 	int clickCraft(int x, int y);
 	void craft(int recipe);
 
-	void drawInventory(RenderWindow* window);
-	void drawCraftSlot(RenderWindow* window, int slotNum);
-	void drawCraftSlot(RenderWindow* window, int slotNum, int recipe);
-	void drawBackpack(RenderWindow* window);
-	void drawButton(RenderWindow* window);
+	void drawInventory(sf::RenderWindow* window);
+	void drawCraftSlot(sf::RenderWindow* window, int slotNum);
+	void drawCraftSlot(sf::RenderWindow* window, int slotNum, int recipe);
+	void drawBackpack(sf::RenderWindow* window);
+	void drawButton(sf::RenderWindow* window);
 };

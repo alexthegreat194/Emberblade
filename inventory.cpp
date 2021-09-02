@@ -1,5 +1,9 @@
 #include "Inventory.hpp"
 #include "Notification.hpp"
+#include "Item.hpp"
+#include "Emberblade.hpp"
+#include <SFML/Graphics.hpp>
+using namespace sf;
 
 #define MAXSTACKS 25
 
@@ -141,15 +145,15 @@ void Inventory::drawInventory(RenderWindow * window)
 	background.setOutlineColor(Color::Cyan);
 	window->draw(background);
 
-	Sprite mush = mushroom[0];
+	sf::Sprite mush = mushroom[0];
 
-	Sprite leatherRect = leatherIcon;
+	sf::Sprite leatherRect = leatherIcon;
 	leatherRect.setScale(.5, .5);
 
-	Sprite meatRect = meatIcon;
+	sf::Sprite meatRect = meatIcon;
 	meatRect.setScale(.5, .5);
 
-	Sprite potionhRect = potionhSprite;
+	sf::Sprite potionhRect = potionhSprite;
 	potionhRect.setScale(.5, .5);
 
 	for (int y = 0; y < 3; y++)
