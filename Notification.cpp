@@ -1,3 +1,5 @@
+#include "Notification.hpp"
+
 Notification::Notification(string inpMessage)
 {
     message = inpMessage;

@@ -1,3 +1,11 @@
+#pragma once
+
+//sfml imports
+#include <SFML/System.hpp>
+//other imports
+#include <string>
+#include "Item.hpp"
+
 class Notification
 {
 	string message;

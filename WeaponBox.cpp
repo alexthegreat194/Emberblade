@@ -1,3 +1,5 @@
+#include "WeaponBox.hpp"
+
 WeaponBox::WeaponBox(int inpx, int inpy, int inpr)
 {
     x = inpx;

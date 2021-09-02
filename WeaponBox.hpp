@@ -1,3 +1,9 @@
+#pragma once 
+//sfml imports
+#include <SFML/System.hpp>
+#include <SFML/window.hpp>
+//other imports
+
 class WeaponBox
 {
 private:

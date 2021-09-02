@@ -1,3 +1,12 @@
+#pragma once 
+
+//sfml imports
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+//other imports
+#include <vector>
+#include "Notification.hpp"
+
 class NotificationHandler
 {
 private:

@@ -1,3 +1,5 @@
+#include "ItemStack.hpp"
+
 //stack sizes
 #define DEFAULT 10
 #define POTION 5

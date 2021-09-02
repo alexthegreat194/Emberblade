@@ -1,3 +1,5 @@
+#include "NotificationHandler.hpp"
+
 void NotificationHandler::addNotification(Notification inpNotif)
 {
     notifications.push_back(inpNotif);

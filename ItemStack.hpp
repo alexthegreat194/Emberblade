@@ -1,3 +1,9 @@
+#pragma once
+
+//sfml imports
+//other imports
+#include "Item.hpp"
+
 class ItemStack
 {
 private:
