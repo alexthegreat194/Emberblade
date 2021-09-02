@@ -1,3 +1,10 @@
+#include "Animal.hpp"
+#include "BodyBox.hpp"
+#include "Globals.hpp"
+#include <string>
+#include <vector>
+using namespace std;
+
 Animal::Animal(int inpX, int inpY)
 {
     x = inpX;

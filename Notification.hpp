@@ -5,6 +5,8 @@
 //other imports
 #include <string>
 #include "Item.hpp"
+using namespace std;
+using namespace sf;
 
 class Notification
 {

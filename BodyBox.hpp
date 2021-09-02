@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 
 //other imports
-#include <WeaponBox.hpp>
+#include "WeaponBox.hpp"
 
 class BodyBox
 {

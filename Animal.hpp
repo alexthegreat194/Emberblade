@@ -1,3 +1,11 @@
+#pragma once
+
+#include <SFML/System.hpp>
+#include <SFML/Graphics.hpp>
+#include "BodyBox.hpp"
+#include "WeaponBox.hpp"
+using namespace sf;
+
 class Animal
 {
 private:
