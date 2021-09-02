@@ -1,7 +1,7 @@
 #pragma once 
 //sfml imports
 #include <SFML/System.hpp>
-#include <SFML/window.hpp>
+#include <SFML/Window.hpp>
 //other imports
 
 class WeaponBox
