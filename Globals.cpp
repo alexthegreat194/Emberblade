@@ -1,19 +1,5 @@
 #pragma once
-
-//sfml imports
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Network.hpp>
-
-//Emberblade
-#include "Emberblade.hpp"
-#include "Inventory.hpp"
-#include "NotificationHandler.hpp"
-
-//namespaces
-using namespace sf;
-using namespace std;
+#include "Globals.hpp"
 
 #define PI 3.14159265359
 

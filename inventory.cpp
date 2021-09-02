@@ -1,4 +1,5 @@
 #include "Inventory.hpp"
+#include "Notification.hpp"
 
 #define MAXSTACKS 25
 

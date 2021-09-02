@@ -6,11 +6,12 @@
 //other imports
 #include <vector>
 #include "Notification.hpp"
+using namespace std;
 
 class NotificationHandler
 {
 private:
-	vector<Notification> notifications;
+	std::vector<Notification> notifications;
 	int mCount = 0;
 
 public:

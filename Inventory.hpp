@@ -3,6 +3,7 @@
 //sfml imports
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
+using namespace sf;
 
 //other import
 #include "Item.hpp"

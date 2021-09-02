@@ -2,9 +2,11 @@
 
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
+#include <stdlib.h>
 #include "BodyBox.hpp"
 #include "WeaponBox.hpp"
 using namespace sf;
+using namespace std;
 
 class Animal
 {
@@ -16,9 +18,9 @@ private:
 	int randomY;
 	bool destinationSelected = false;
 
-	Clock walkTimer;
+	sf::Clock walkTimer;
 
-	Clock frameTimer;
+	sf::Clock frameTimer;
 	int frames = 0;
 	bool up = false;
 	bool right = false;

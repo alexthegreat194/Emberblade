@@ -1,4 +1,6 @@
 #include "WeaponBox.hpp"
+#include <SFML/Graphics.hpp>
+using namespace sf;
 
 WeaponBox::WeaponBox(int inpx, int inpy, int inpr)
 {
