@@ -536,7 +536,7 @@ int main()
 		weapon[i] = WeaponBox(localX, localY, 10);
 	}
 
-	RenderWindow window(VideoMode(MYWINDOW_WIDTH, MYWINDOW_HEIGHT), "Moba Monster Hunter", Style::Titlebar | Style::Close);
+	RenderWindow window(VideoMode(MYWINDOW_WIDTH, MYWINDOW_HEIGHT), "Moba Monster Hunter", Style::Titlebar | Style::Close | sf::Style::Resize);
 	window.setFramerateLimit(60);
 	window.setMouseCursorVisible(false);
 
