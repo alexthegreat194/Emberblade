@@ -1,0 +1,449 @@
+In file included from Animal.cpp:1:
+In file included from ./Animal.hpp:6:
+In file included from ./BodyBox.hpp:8:
+./WeaponBox.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool inUse = false;
+                   ^
+In file included from Animal.cpp:1:
+./Animal.hpp:19:27: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool destinationSelected = false;
+                                 ^
+./Animal.hpp:24:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int frames = 0;
+                   ^
+./Animal.hpp:25:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool up = false;
+                ^
+./Animal.hpp:26:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool right = false;
+                   ^
+./Animal.hpp:27:17: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int animalType = rand() % 2;
+                       ^
+./Animal.hpp:29:17: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        BodyBox pigBox = BodyBox(64, 64);
+                       ^
+./Animal.hpp:30:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int damage = 0;
+                   ^
+./Animal.hpp:31:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int maxDamage = 50 + (50 * animalType);
+                      ^
+./Animal.hpp:32:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool alive = true;
+                   ^
+./Animal.hpp:34:21: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool beingAttacked = false;
+                           ^
+In file included from Animal.cpp:3:
+In file included from ./Globals.hpp:11:
+In file included from ./Inventory.hpp:10:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+In file included from Animal.cpp:3:
+In file included from ./Globals.hpp:11:
+./Inventory.hpp:16:15: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool pressed = false;
+                     ^
+./Inventory.hpp:17:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int scroll = 0;
+                   ^
+In file included from Animal.cpp:3:
+In file included from ./Globals.hpp:12:
+./NotificationHandler.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int mCount = 0;
+                   ^
+Animal.cpp:36:36: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+            playerInv.addItem(Item(ItemType::meat));
+                                   ^
+Animal.cpp:37:72: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+            notifHandler.addNotification(Notification("Recieved", Item(ItemType::meat)));
+                                                                       ^
+Animal.cpp:41:36: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+            playerInv.addItem(Item(ItemType::leather));
+                                   ^
+Animal.cpp:42:72: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+            notifHandler.addNotification(Notification("Recieved", Item(ItemType::leather)));
+                                                                       ^
+19 warnings generated.
+In file included from BodyBox.cpp:1:
+In file included from ./BodyBox.hpp:8:
+./WeaponBox.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool inUse = false;
+                   ^
+1 warning generated.
+Globals.cpp:1:9: warning: #pragma once in main file [-Wpragma-once-outside-header]
+#pragma once
+        ^
+In file included from Globals.cpp:2:
+In file included from ./Globals.hpp:11:
+In file included from ./Inventory.hpp:10:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+In file included from Globals.cpp:2:
+In file included from ./Globals.hpp:11:
+./Inventory.hpp:16:15: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool pressed = false;
+                     ^
+./Inventory.hpp:17:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int scroll = 0;
+                   ^
+In file included from Globals.cpp:2:
+In file included from ./Globals.hpp:12:
+./NotificationHandler.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int mCount = 0;
+                   ^
+5 warnings generated.
+In file included from Inventory.cpp:1:
+In file included from ./Inventory.hpp:10:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+In file included from Inventory.cpp:1:
+./Inventory.hpp:16:15: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool pressed = false;
+                     ^
+./Inventory.hpp:17:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int scroll = 0;
+                   ^
+In file included from Inventory.cpp:5:
+In file included from ./Globals.hpp:12:
+./NotificationHandler.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int mCount = 0;
+                   ^
+Inventory.cpp:25:30: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if (stacks[i].getType() != ItemType::empty)
+                                           ^
+Inventory.cpp:122:23: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if ((canRemove(Item(ItemType::plant)) && canRemove(Item(ItemType::meat))) && canAdd(Item(ItemType::healthPotion)))
+                                    ^
+Inventory.cpp:122:59: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if ((canRemove(Item(ItemType::plant)) && canRemove(Item(ItemType::meat))) && canAdd(Item(ItemType::healthPotion)))
+                                                                        ^
+Inventory.cpp:122:92: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if ((canRemove(Item(ItemType::plant)) && canRemove(Item(ItemType::meat))) && canAdd(Item(ItemType::healthPotion)))
+                                                                                                         ^
+Inventory.cpp:124:20: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        removeItem(Item(ItemType::plant));
+                                        ^
+Inventory.cpp:125:20: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        removeItem(Item(ItemType::meat));
+                                        ^
+Inventory.cpp:126:17: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        addItem(Item(ItemType::healthPotion));
+                                     ^
+Inventory.cpp:127:62: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        notifHandler.addNotification(Notification("Crafted", Item(ItemType::healthPotion)));
+                                                                                  ^
+Inventory.cpp:164:42: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        if (stacks[(y * 10) + x].getType() == ItemType::plant)
+                                                              ^
+Inventory.cpp:169:47: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        else if (stacks[(y * 10) + x].getType() == ItemType::leather)
+                                                                   ^
+Inventory.cpp:174:47: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        else if (stacks[(y * 10) + x].getType() == ItemType::meat)
+                                                                   ^
+Inventory.cpp:179:47: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        else if (stacks[(y * 10) + x].getType() == ItemType::healthPotion)
+                                                                   ^
+Inventory.cpp:371:9: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        case ItemType::empty:
+                             ^
+Inventory.cpp:373:9: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        case ItemType::plant:
+                             ^
+Inventory.cpp:383:9: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        case ItemType::leather:
+                             ^
+Inventory.cpp:392:9: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        case ItemType::meat:
+                             ^
+Inventory.cpp:401:9: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        case ItemType::healthPotion:
+                             ^
+Inventory.cpp:414:31: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                        std::printf("index: %i\n", (i * 10) + x);
+                                            ~~     ^~~~~~~~~~~~
+                                            %lu
+Inventory.cpp:430:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        if (mode == gameMode::inventory)
+                    ^
+23 warnings generated.
+Item.cpp:5:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        blockType = ItemType::empty;
+                    ^
+1 warning generated.
+In file included from ItemStack.cpp:1:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+ItemStack.cpp:9:17: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+    stackType = ItemType::empty;
+                ^
+ItemStack.cpp:18:22: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+    if (stackType == ItemType::empty)
+                     ^
+ItemStack.cpp:26:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::plant:
+             ^
+ItemStack.cpp:32:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::meat:
+             ^
+ItemStack.cpp:38:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::leather:
+             ^
+ItemStack.cpp:44:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::healthPotion:
+             ^
+ItemStack.cpp:58:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+ItemStack.cpp:63:26: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        if (stackType == ItemType::empty)
+                         ^
+ItemStack.cpp:83:23: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+    if ((stackType != ItemType::empty) && (itemCount > 0))
+                      ^
+ItemStack.cpp:97:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+            stackType = ItemType::empty;
+                        ^
+11 warnings generated.
+Notification.cpp:6:22: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+    notifItem = Item(ItemType::empty);
+                     ^
+1 warning generated.
+In file included from NotificationHandler.cpp:1:
+./NotificationHandler.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int mCount = 0;
+                   ^
+In file included from NotificationHandler.cpp:2:
+In file included from ./Globals.hpp:11:
+In file included from ./Inventory.hpp:10:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+In file included from NotificationHandler.cpp:2:
+In file included from ./Globals.hpp:11:
+./Inventory.hpp:16:15: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool pressed = false;
+                     ^
+./Inventory.hpp:17:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int scroll = 0;
+                   ^
+NotificationHandler.cpp:41:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::plant:
+             ^
+NotificationHandler.cpp:45:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::meat:
+             ^
+NotificationHandler.cpp:49:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::leather:
+             ^
+NotificationHandler.cpp:53:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        case ItemType::empty:
+             ^
+8 warnings generated.
+In file included from WeaponBox.cpp:1:
+./WeaponBox.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool inUse = false;
+                   ^
+1 warning generated.
+In file included from main.cpp:17:
+In file included from ./Globals.hpp:11:
+In file included from ./Inventory.hpp:10:
+./ItemStack.hpp:12:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int itemCount = 0;
+                      ^
+In file included from main.cpp:17:
+In file included from ./Globals.hpp:11:
+./Inventory.hpp:16:15: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool pressed = false;
+                     ^
+./Inventory.hpp:17:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int scroll = 0;
+                   ^
+In file included from main.cpp:17:
+In file included from ./Globals.hpp:12:
+./NotificationHandler.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int mCount = 0;
+                   ^
+In file included from main.cpp:19:
+In file included from ./Animal.hpp:6:
+In file included from ./BodyBox.hpp:8:
+./WeaponBox.hpp:15:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool inUse = false;
+                   ^
+In file included from main.cpp:19:
+./Animal.hpp:19:27: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool destinationSelected = false;
+                                 ^
+./Animal.hpp:24:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int frames = 0;
+                   ^
+./Animal.hpp:25:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool up = false;
+                ^
+./Animal.hpp:26:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool right = false;
+                   ^
+./Animal.hpp:27:17: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int animalType = rand() % 2;
+                       ^
+./Animal.hpp:29:17: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        BodyBox pigBox = BodyBox(64, 64);
+                       ^
+./Animal.hpp:30:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int damage = 0;
+                   ^
+./Animal.hpp:31:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int maxDamage = 50 + (50 * animalType);
+                      ^
+./Animal.hpp:32:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool alive = true;
+                   ^
+./Animal.hpp:34:21: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool beingAttacked = false;
+                           ^
+main.cpp:48:6: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+enum class weaponType
+     ^
+main.cpp:55:27: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+weaponType playerWeapon = weaponType::sword;
+                          ^
+main.cpp:71:26: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        weaponType hotbarWeapon = weaponType::sword;
+                                ^
+main.cpp:72:16: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                      ^
+main.cpp:71:28: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        weaponType hotbarWeapon = weaponType::sword;
+                                  ^
+main.cpp:72:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                               ^
+main.cpp:72:48: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                                                      ^
+main.cpp:72:71: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                                                                             ^
+main.cpp:72:94: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                                                                                                    ^
+main.cpp:72:118: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        Item items[5] = { Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty), Item(ItemType::empty) , Item(ItemType::empty) };
+                                                                                                                            ^
+main.cpp:125:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int visible = 255;
+                    ^
+main.cpp:180:19: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool collectable = false;
+                         ^
+main.cpp:182:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        bool active = true;
+                    ^
+main.cpp:185:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int frames = 0;
+                   ^
+main.cpp:200:27: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        playerInv.addItem(Item(ItemType::plant));
+                                               ^
+main.cpp:201:63: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                        notifHandler.addNotification(Notification("Recieved", Item(ItemType::plant)));
+                                                                                   ^
+main.cpp:318:2: error: use of undeclared identifier 'grassFrontTexture'
+        grassFrontTexture.loadFromFile("assets\\grassFront.png");
+        ^
+main.cpp:319:2: error: use of undeclared identifier 'grassFrontSprite'
+        grassFrontSprite.setTexture(grassFrontTexture);
+        ^
+main.cpp:319:30: error: use of undeclared identifier 'grassFrontTexture'
+        grassFrontSprite.setTexture(grassFrontTexture);
+                                    ^
+main.cpp:320:2: error: use of undeclared identifier 'grassFrontSprite'
+        grassFrontSprite.setScale(1.04167, 1.04167);
+        ^
+main.cpp:452:3: error: use of undeclared identifier 'healthBarEmpty'
+                healthBarEmpty[i].setTexture(uiTexture);
+                ^
+main.cpp:453:3: error: use of undeclared identifier 'healthBarGreen'
+                healthBarGreen[i].setTexture(uiTexture);
+                ^
+main.cpp:465:3: error: use of undeclared identifier 'healthBarEmpty'
+                healthBarEmpty[i].setTextureRect(IntRect(259 + (i * 25), 63, 25, 24));
+                ^
+main.cpp:467:3: error: use of undeclared identifier 'healthBarGreen'
+                healthBarGreen[i].setTextureRect(IntRect(399 + (i * 7) + i, 72, 7, 14));
+                ^
+main.cpp:590:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        playerInv.addItem(Item(ItemType::plant), 10);
+                               ^
+main.cpp:591:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        playerInv.addItem(Item(ItemType::meat), 10);
+                               ^
+main.cpp:592:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        playerInv.addItem(Item(ItemType::leather), 10);
+                               ^
+main.cpp:593:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+        playerInv.addItem(Item(ItemType::healthPotion), 10);
+                               ^
+main.cpp:644:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                                mode = gameMode::inventory;
+                                                       ^
+main.cpp:664:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                                mode = gameMode::inventory;
+                                                       ^
+main.cpp:671:14: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                                mode = gameMode::game;
+                                                       ^
+main.cpp:824:25: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                if (playerWeapon == weaponType::spear)
+                                                    ^
+main.cpp:826:21: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        playerWeapon = weaponType::sword;
+                                                       ^
+main.cpp:827:23: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        hotBar.setWeapon(weaponType::spear);
+                                                         ^
+main.cpp:831:21: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        playerWeapon = weaponType::spear;
+                                                       ^
+main.cpp:832:23: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        hotBar.setWeapon(weaponType::sword);
+                                                         ^
+main.cpp:847:17: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                if (mode == gameMode::game)
+                                            ^
+main.cpp:848:13: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        mode = gameMode::inventory;
+                                               ^
+main.cpp:850:13: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                                        mode = gameMode::game;
+                                               ^
+main.cpp:865:23: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if (playerWeapon == weaponType::spear)
+                                    ^
+main.cpp:906:28: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                else if (playerWeapon == weaponType::sword)
+                                         ^
+main.cpp:1088:8: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                case weaponType::spear:
+                     ^
+main.cpp:1088:8: error: expression is not an integral constant expression
+                case weaponType::spear:
+                     ^~~~~~~~~~~~~~~~~
+main.cpp:1091:8: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                case weaponType::sword:
+                     ^
+main.cpp:1091:8: error: expression is not an integral constant expression
+                case weaponType::sword:
+                     ^~~~~~~~~~~~~~~~~
+main.cpp:1113:15: warning: use of enumeration in a nested name specifier is a C++11 extension [-Wc++11-extensions]
+                if (mode == gameMode::inventory)
+                            ^
+51 warnings and 10 errors generated.
+clang: error: no such file or directory: 'main.o'
