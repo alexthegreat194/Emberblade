@@ -71,3 +71,16 @@ Temporary Items
 
 src/.DS_Store
 .DS_Store
+
+# built items
+src/*.o
+src/*.dylib
+src/*.dll
+src/*.exe
+src/*.out
+src/*.app
+src/*.zip
+src/*.tar
+src/*.gz
+src/*.blade
+Emberblade
