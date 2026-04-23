@@ -2,7 +2,7 @@
 
 Emberblade is a top-down 2D game built as a summer project. You explore a large open world, gather plants, manage gear, and fight wildlife with different weapons, all wrapped in a simple inventory and crafting-style UI.
 
-![Emberblade Screenshot](docs/screenshot.png)
+![Emberblade Screenshot](assets/github//screenshot.png)
 
 ## About the game
 
