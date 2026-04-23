@@ -10,7 +10,7 @@ On macOS, use the **Clang** archive that matches the machine (**64-bit** Intel v
 
 ### What was copied into `vendor/sfml/` (Apr 2026)
 
-The macOS SDK tree was merged into the repo under `vendor/sfml/` so `src/compile.sh` can use `-I../vendor/sfml/include` and `-L../vendor/sfml/lib` without Homebrew:
+The macOS SDK tree was merged into the repo under `vendor/sfml/` so `scripts/compile.sh` can use `-Ivendor/sfml/include` and `-Lvendor/sfml/lib` without Homebrew:
 
 - **`include/`** — full SFML headers (`SFML/Config.hpp`, module headers, etc.).
 - **`lib/`** — `libsfml-*.2.6.2.dylib`, version symlinks (e.g. `libsfml-graphics.dylib` → `…2.6.dylib`), and **`lib/cmake/`** (CMake config for optional CMake builds).
@@ -35,7 +35,7 @@ Third-party native deps we keep **inside the repo** under `vendor/` instead of r
 ### `vendor/sfml/` layout (what the **prebuilt dylibs** expect)
 
 - **`include/`** — headers (`SFML/Config.hpp`, …).
-- **`lib/`** — `libsfml-*.dylib` plus symlinks (what `compile.sh` links with `-L`).
+- **`lib/`** — `libsfml-*.dylib` plus symlinks (what `scripts/compile.sh` links with `-L`).
 - **`Frameworks/`** — **required at runtime** for the official macOS dylibs: they reference paths like `@rpath/../Frameworks/freetype.framework/...`, `@rpath/../Frameworks/OpenAL.framework/...`, vorbis/ogg/FLAC, etc.
 
 The official zip also has an **`extlibs/`** folder with those same `*.framework` bundles. **dyld does not look in `extlibs/`** for those references — only **`Frameworks/`** (sibling of `lib/`). So: **copy or move `extlibs/*.framework` into `Frameworks/`**. After that, you **do not need** an `extlibs/` folder in the repo unless you want to keep a duplicate for your own reference.
@@ -46,6 +46,13 @@ The official zip also has an **`extlibs/`** folder with those same `*.framework`
 - **`file vendor/sfml/lib/libsfml-system.dylib`** — confirm **arm64** vs **x86_64**.
 - **`lipo -archs vendor/sfml/lib/libsfml-system.dylib`** — list slice(s) in a universal binary.
 
-### `compile.sh` and “build config”
+### `scripts/compile.sh` and “build config”
 
-The game script sets **rpath** and links `-lsfml-*`. It does **not** change where SFML’s own dylibs look for FreeType/OpenAL — that is **baked into the SFML binaries**. Fixing paths without moving frameworks would mean **rebuilding SFML** or **`install_name_tool`**, which is unnecessary if **`Frameworks/`** is populated correctly.
+`scripts/compile.sh` (and **`scripts/run.sh`**, which builds then **exec**s the game from the **repo root**) compile `src/*.cpp` and write `*.o` into **`build/`**, then link **`./Emberblade`** in the root. The build script sets **rpath** and links `-lsfml-*`. It does **not** change where SFML’s own dylibs look for FreeType/OpenAL — that is **baked into the SFML binaries**. Fixing paths without moving frameworks would mean **rebuilding SFML** or **`install_name_tool`**, which is unnecessary if **`Frameworks/`** is populated correctly.
+
+#### `scripts/run.sh`: `SCRIPT_DIR` and `REPO_ROOT`
+
+These are set with `cd … && pwd` so paths work no matter which directory you run the script from.
+
+- **`SCRIPT_DIR`** — absolute path to the `scripts/` folder (the directory that contains the invoked script). Used as `"$SCRIPT_DIR/compile.sh"` so the compile step always finds the sibling script.
+- **`REPO_ROOT`** — absolute path to the repository root (the parent of `scripts/`). After building, the script **`cd`’s** there and **`exec`**s **`Emberblade`**, so the process working directory is the repo root and game-relative paths (e.g. `assets/`) resolve correctly.

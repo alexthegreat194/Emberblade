@@ -73,6 +73,7 @@ src/.DS_Store
 .DS_Store
 
 # built items
+build/
 src/*.o
 src/*.dylib
 src/*.dll

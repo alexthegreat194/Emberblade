@@ -25,8 +25,9 @@ Then build and run from the repository root (so `assets/` resolves correctly):
 ```bash
 git clone https://github.com/alexthegreat194/Emberblade.git
 cd Emberblade
-chmod +x src/compile.sh
-./src/compile.sh
-./Emberblade
+chmod +x scripts/compile.sh scripts/run.sh
+./scripts/compile.sh   # build only → ./Emberblade
+./scripts/run.sh       # build, then run (cwd = repo root)
+./Emberblade          # run last build
 ```
     
