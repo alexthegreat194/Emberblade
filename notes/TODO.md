@@ -4,6 +4,6 @@
 .o files
 sfml binaries
 
-- [ ] expand readme and add preview images
 - [x] audit binaries folder
-- [ ] orginize assets
+- [x] orginize assets
+- [ ] expand readme and add preview images
