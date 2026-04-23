@@ -291,27 +291,27 @@ bool isBetween(int testNumber, int num1, int num2)
 int imagesLoaded = 0;
 void loadTextures()
 {
-	font.loadFromFile("arial.ttf");
-	sheepTexture.loadFromFile("assets/sheep.png");
-	grassTexture.loadFromFile("assets/grass.jpg");
-	grassTexture.loadFromFile("assets/grassB.png");
+	font.loadFromFile("assets/fonts/arial.ttf");
+	sheepTexture.loadFromFile("assets/sprites/sheep.png");
+	grassTexture.loadFromFile("assets/sprites/grass.jpg");
+	grassTexture.loadFromFile("assets/sprites/grassB.png");
 	grassTexture.setRepeated(true);
 	grassSprite.setTexture(grassTexture);
 	grassSprite.setTextureRect(IntRect(0, 0, 20000, 20000));
 	imagesLoaded++;
 
-	grassBackTexture.loadFromFile("assets/grassBack.png");
+	grassBackTexture.loadFromFile("assets/sprites/grassBack.png");
 	grassBackSprite.setTexture(grassBackTexture);
 	grassBackSprite.setScale(1.04167, 1.04167);
 	imagesLoaded++;
 
-	grassFrontTexture.loadFromFile("assets/grassFront.png");
+	grassFrontTexture.loadFromFile("assets/sprites/grassFront.png");
 	grassFrontSprite.setTexture(grassFrontTexture);
 	grassFrontSprite.setScale(1.04167, 1.04167);
 	imagesLoaded++;
 
 	//stylesheet sprites
-	styleSheet.loadFromFile("assets/sheet.png");
+	styleSheet.loadFromFile("assets/sprites/sheet.png");
 	for (size_t i = 0; i < 3; i++)
 		mushroom[i].setTexture(styleSheet);
 	mushroom[0].setTextureRect(IntRect(129, 131, 14, 15));
@@ -319,39 +319,39 @@ void loadTextures()
 	mushroom[2].setTextureRect(IntRect(161, 131, 14, 15));
 	imagesLoaded++;
 
-	leatherSheet.loadFromFile("assets/leather_icon.png");
+	leatherSheet.loadFromFile("assets/sprites/leather_icon.png");
 	leatherIcon.setTexture(leatherSheet);
 	leatherIcon.setTextureRect(IntRect(0, 0, 32, 32));
 	imagesLoaded++;
 
-	meatSheet.loadFromFile("assets/meat_icon.png");
+	meatSheet.loadFromFile("assets/sprites/meat_icon.png");
 	meatIcon.setTexture(meatSheet);
 	meatIcon.setTextureRect(IntRect(0, 0, 32, 32));
 	imagesLoaded++;
 
-	spearSheet.loadFromFile("assets/spear_weapon.png");
+	spearSheet.loadFromFile("assets/sprites/spear_weapon.png");
 	spearSprite.setTexture(spearSheet);
 	spearSprite.setTextureRect(IntRect(0, 0, 32, 32));
 	spearSpriteStatic = spearSprite;
 	imagesLoaded++;
 
-	swordSheet.loadFromFile("assets/sword_weapon.png");
+	swordSheet.loadFromFile("assets/sprites/sword_weapon.png");
 	swordSprite.setTexture(swordSheet);
 	swordSprite.setTextureRect(IntRect(0, 0, 32, 32));
 	swordSpriteStatic = swordSprite;
 	imagesLoaded++;
 
-	potionaSheet.loadFromFile("assets/potiona_icon.png");
+	potionaSheet.loadFromFile("assets/sprites/potiona_icon.png");
 	potionaSprite.setTexture(potionaSheet);
 	potionaSprite.setTextureRect(IntRect(0, 0, 32, 32));
 	imagesLoaded++;
-	potionhSheet.loadFromFile("assets/potionh_icon.png");
+	potionhSheet.loadFromFile("assets/sprites/potionh_icon.png");
 	potionhSprite.setTexture(potionhSheet);
 	potionhSprite.setTextureRect(IntRect(0, 0, 32, 32));
 	imagesLoaded++;
 
 	//animal sprites and sheet
-	pigTexture.loadFromFile("assets/pig.png");
+	pigTexture.loadFromFile("assets/sprites/pig.png");
 	for (size_t i = 0; i < 3; i++)
 	{
 		pigUp[i].setTexture(pigTexture);
@@ -371,7 +371,7 @@ void loadTextures()
 	imagesLoaded++;
 
 	//boar
-	boarTexture.loadFromFile("assets/boar.png");
+	boarTexture.loadFromFile("assets/sprites/boar.png");
 	for (size_t i = 0; i < 3; i++)
 	{
 		boarUp[i].setTexture(boarTexture);
@@ -391,7 +391,7 @@ void loadTextures()
 	imagesLoaded++;
 
 	//player sheet
-	playerTexture.loadFromFile("assets/gold.png");
+	playerTexture.loadFromFile("assets/sprites/gold.png");
 	for (size_t i = 0; i < 9; i++)
 	{
 		pUp[i].setTexture(playerTexture);
@@ -410,7 +410,7 @@ void loadTextures()
 	imagesLoaded++;
 
 	//ui sprites
-	uiTexture.loadFromFile("assets/ui.png");
+	uiTexture.loadFromFile("assets/sprites/ui.png");
 	for (size_t y = 0; y < 3; y++)
 	{
 		slotSprite[y][0].setTexture(uiTexture);
@@ -476,9 +476,9 @@ void loadingScreen()
 	Texture loadingTexture;
 	Sprite loadingSprite;
 
-	backgroundTexture.loadFromFile("assets/loadingPage.png");
+	backgroundTexture.loadFromFile("assets/sprites/loadingPage.png");
 	backgroundSprite.setTexture(backgroundTexture);
-	loadingTexture.loadFromFile("assets/potiona_icon.png");
+	loadingTexture.loadFromFile("assets/sprites/potiona_icon.png");
 	loadingSprite.setTexture(loadingTexture);
 
 	//loading variables
@@ -505,7 +505,7 @@ void loadingScreen()
 				window.close();
 		}
 
-		printf("loaded: %i\n", imagesLoaded);
+		// printf("loaded: %i\n", imagesLoaded);
 		greenBar.setPosition(100, 425);
 		greenBar.setSize(Vector2f(500 * (float(imagesLoaded) / float(imagesToLoad)), greenBar.getSize().y));
 
